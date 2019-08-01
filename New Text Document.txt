@@ -2,3 +2,9 @@ http://ws.audioscrobbler.com/2.0/
 
 api key:c181c5723583a21ac8d2a3d653463752
 secret:6d733f156b28c4dec0fceb913334ac20
+
+https://lastfm-img2.akamaized.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png
+https://lastfm-img2.akamaized.net/i/u/64s/ed79871d9fb9445c815fff0a366091cb.png
+https://lastfm-img2.akamaized.net/i/u/64s/2a96cbd8b46e442fc41c2b86b821562f.png
+
+http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=c181c5723583a21ac8d2a3d653463752&mbid=13f5488d-8e41-42d8-9fe9-a5295f1a9a3d&format=json
