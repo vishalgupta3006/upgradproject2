@@ -1,10 +1,10 @@
 .col-md-2{
-    margin-top: 50px !important;
+     margin-top: 50px !important;
     background-color: antiquewhite;
-    border: 2px solid !important;
     margin: 15px;
     height: 150px;
-    padding: 20px;
+    padding: 0px;
+    padding-top:0;
     box-shadow: 0 4px 8px rgba(200,200,200,0.8), 0 6px 20px 0 rgba(200,200,200,0.8);
     cursor: pointer;
 }
