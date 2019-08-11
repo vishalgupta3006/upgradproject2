@@ -18,13 +18,13 @@ class ShowList extends Component {
         const res = await fetch(url);
         const data = await res.json();
         this.setState({ trackInfo: data });
-        console.log(this.state);
+  
     }
     async artistinfo(item){
         const url = `http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Coldplay&api_key=c181c5723583a21ac8d2a3d653463752&format=json`;
         const res = await fetch(url);
         const data = await res.json();
-        console.log(data);
+     
     }
 
     toggle() {
@@ -42,8 +42,9 @@ class ShowList extends Component {
                 <div>
                     <div className="row align-items-center">
                         {this.props.items.tracks.track.map((item, i) => {
-                            return <div id={item.mbid} key={i} className="col col-md-2" onClick={this.trackInfo.bind(this, item.mbid)}>
+                            return <div id={item.mbid} key={i} style={{height:'220px'}} className="col col-md-2" onClick={this.trackInfo.bind(this, item.mbid)}>
                                 <div onClick={this.toggle}>
+                                     <img src={item.image[0]["#text"]} style={{height:'140px',width:'100%',position:'relative',left:'0',top:'0px',borderRadius:'0px'}} /><br/><br/>
                                     <div className="itemName" >{item.name}</div>
                                     <div className="itemArtist">{item.artist.name}</div>
                                 </div>
